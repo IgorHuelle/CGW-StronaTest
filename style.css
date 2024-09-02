@@ -291,6 +291,14 @@ div.btn a {
     line-height: 2.5rem;
     font-weight: bold;
 }
+#p1 , #p3 {
+    animation: autoShowLeft both;
+    animation-timeline: view(80% 20%);
+}
+#p2 {
+    animation: autoShowRight both;
+    animation-timeline: view(80% 20%);
+}
 #p1 .point-content > div,
 #p3 .point-content > div {
     margin-left: 10px;
@@ -307,6 +315,25 @@ div.btn a {
     margin-left: 0;
     margin-right: 10px;
 }
+@keyframes autoShowLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes autoShowRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 #oferts h2 {
     position: relative;
     margin-bottom: 70px;
@@ -404,6 +431,8 @@ div.btn a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 #contact > ul li a {
     font-size: 2.7rem;
@@ -429,3 +458,41 @@ div.btn a {
     font-size: 1.2rem;
     font-weight: bold;
 }
+#contact > ul li::before {
+    content: attr(data-contact-name);
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    color: var(--clr-white);
+    opacity: 0;
+    padding: 10px;
+    border-radius: 15px;
+
+    transition: all .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#contact > ul li:hover::before {
+    transform: translateX(-50%) translateY(-140%);
+    opacity: 1;
+}
+/* #contact > ul li:not(:nth-child(1))::after {
+    content: attr(data-contact-details);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    color: var(--clr-white);
+    opacity: 0;
+    padding: 10px;
+    border-radius: 15px;
+
+    transition: all .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#contact > ul li:hover::after {
+    transform: translateX(-50%) translateY(140%);
+    opacity: 1;
+} */
