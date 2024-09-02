@@ -305,9 +305,8 @@ div.btn a {
 }
 
 #p2 {
-    /* margin-inline: auto 0; */
     justify-content: end;
-}
+}   
 #p2 .point-content > h3 {
     text-align: right;
 }
