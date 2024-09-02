@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
-    scroll-margin: 120px;
+    scroll-margin: 220px;
 }
 body {
     background-color: rgb(250, 250, 250);
