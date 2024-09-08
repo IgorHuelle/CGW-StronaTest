@@ -153,11 +153,11 @@ span.clr-cgw .clr-cgw-blue {
     content: '';
     position: absolute;
     top: 50%;
-    left: 90%;
-    height: 1px;
-    width: 80%;
+    right: -20px;
+    height: 60px;
+    width: 1px;
     background-color: rgb(216, 216, 216);
-    transform: rotateZ(90deg);
+    transform: translate(0, -50%);
 }
 #nav > ul li a {
     font-weight: bold;
@@ -269,38 +269,95 @@ span.clr-cgw .clr-cgw-blue {
     margin-bottom: 5px;
 }
 #about > p {
-    position: relative;
     font-size: 1.2rem;
     margin-bottom: 80px;
+}
+.underline {
+    position: relative;
 }
 .underline::before {
     content: '';
     position: absolute;
     bottom: -25px;
     left: 50%;
-    width: 150%;
+    width: calc(100% + 100px);
     height: 4px;
     border-radius: 40%;
     background-image: linear-gradient(to right, #7ee3ff09, #7ee3ff69, #7ee3ff09);
     transform: translateX(-50%);
 }
-#test {
-    flex-direction: row;
+/* #about > .about-content {
+    display: flex;
     gap: 10px;
+    margin-bottom: 300px;
+    padding: 40px;
 }
-#test > div,
-#test > img {
-    width: 50%;
+#about > .about-content > div,
+#about > .about-content > img {
+    width: 60%;
 }
-#test > img {
+#about > .about-content > img {
     border-radius: 20px;
+    width: 40%;
+    margin-right: 30px;
+}
+#about > .about-content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about > .about-content > div > h2 {
+    margin-bottom: 80px;
+}
+#about > .about-content > div > p {
+    font-size: 1.3rem;
+} */
+#about > .about-content {
+    margin-inline: 80px;
+    border-radius: 20px;
+    margin-bottom: 150px;
+    /* overflow: hidden; */
+    
+    display: flex;
+    gap: 40px;
+}
+/* #about > .about-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 110%;
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, white 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+} */
+
+#about > .about-content > img {
+    width: 50%;
+    border-radius: 20px;
+}
+#about > .about-content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about > .about-content > div h3 {
+    font-size: 2rem;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+#about > .about-content > div p {
+    font-size: 1.2rem;
+    padding-inline: 20px;
 }
 
 .point-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-inline: 80px;
+    min-width: 70%;
+    margin-inline: 80px;
     gap: 50px;
 }
 .point {
@@ -322,9 +379,6 @@ span.clr-cgw .clr-cgw-blue {
     font-size: 3rem;
     color: var(--clr-primary);
 }
-.point .point-content {
-    max-width: 700px;
-}
 .point .point-content .inform {
     display: flex;
     gap: 10px;
@@ -345,6 +399,8 @@ span.clr-cgw .clr-cgw-blue {
     position: relative;
     font-size: 1.15rem;
     background-color: rgb(255, 255, 255);
+    min-width: 500px;
+    max-width: 700px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -373,9 +429,12 @@ span.clr-cgw .clr-cgw-blue {
     position: relative;
     margin-bottom: 70px;
 }
-#oferts {
-    padding-inline: 80px;
+/* #oferts > .oferts-content {
+    width: 50%;
 }
+#oferts > div:not(.oferts-content) {
+    width: 50%;
+} */
 #oferts-list {
     width: 100%;
     border-radius: 30px;
@@ -395,7 +454,7 @@ span.clr-cgw .clr-cgw-blue {
     align-items: center;
     height: var(--name-height);
     gap: 5px;
-    height: 40px;
+    height: 55px;
     cursor: pointer;
 }
 .oferts-item .name > div {
@@ -427,6 +486,28 @@ span.clr-cgw .clr-cgw-blue {
 }
 .oferts-item.flip-icon .name i {
     transform: rotateX(-180deg);
+}
+#oferts > .oferts-content {
+    margin-inline: 80px;
+    
+    display: flex;
+    gap: 40px;
+}
+#oferts > .oferts-content > img {
+    width: 50%;
+    border-radius: 20px;
+}
+#oferts > .oferts-content > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#oferts > .oferts-content > div h3 {
+    font-size: 2rem;
+    width: fit-content;
+    margin-bottom: 50px;
 }
 
 #contact {
