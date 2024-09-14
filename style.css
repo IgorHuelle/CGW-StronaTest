@@ -174,6 +174,7 @@ span.clr-cgw .clr-cgw-blue {
         width: 100dvw;
         background: url(img/hero-background.webp) no-repeat 50%;
         background-size: cover;
+        overflow: hidden;
         transform: translate(-50%, -50%);
         z-index: -1;
     }
