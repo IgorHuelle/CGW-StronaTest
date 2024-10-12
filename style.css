@@ -574,14 +574,15 @@ span.clr-cgw .clr-cgw-blue {
 
     #hdr > #hdr-content {
         width: 100%;
-        text-align: center;
+        padding-inline: 20px;
+        /* text-align: center; */
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        /* display: flex; */
+        /* flex-direction: column;
+        align-items: center; */
     }
     #hdr > #hdr-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
     }
     #hdr > #hdr-content p {
         font-size: 1rem;
@@ -590,13 +591,8 @@ span.clr-cgw .clr-cgw-blue {
         padding: 30px 0;
         border-radius: 0;
     }
-    #hdr p {
-        color: var(--clr-white);
-        max-width: 800px;
-        font-size: 1.3rem;
-        margin-bottom: 20px;
-    }
     .underline::before {
+        bottom: -15px;
         width: 80dvw;
     }
 
@@ -610,44 +606,44 @@ span.clr-cgw .clr-cgw-blue {
         display: none;
     }
     #about > .about-content div h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
     }
     #about > .about-content div p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     #about > h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 20px;
     }
     #about > p {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        font-size: 1.1rem;
     }
-    
+
     .point-wrapper {
-        min-width: 0;
-        /* width: 100%; */
         margin: 0;
     }
     .point .point-bubble {
         display: none;
     }
     .point .point-content .inform-item > p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .point .point-content .inform-item > p.pointout {
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
     .point .point-content > h3 {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
     }
     .point .point-content > div {
-        font-size: 1.15rem;
+        font-size: 1rem;
         min-width: 0;
+        border-radius: 0;
     }
     #p2 .point-content > h3 {
         text-align: center;
@@ -660,6 +656,9 @@ span.clr-cgw .clr-cgw-blue {
         width: 100%;
         margin: 0;
     }
+    #oferts > .oferts-content > div h3 {
+        font-size: 1.5rem;
+    }
     #oferts .oferts-content {
         margin: 0;
     }
@@ -669,8 +668,27 @@ span.clr-cgw .clr-cgw-blue {
     #oferts > .oferts-content > div {
         width: 90dvw;
     }
+    #oferts .oferts-list {
+        font-size: 1rem;
+    }
 
     #contact > h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact > ul li:not(:nth-child(2)) {
+        width: 60px;
+    }
+    #contact > ul li a {
+        font-size: 2.3rem;
+        line-height: 0.5rem;
+    }
+    #contact > ul li p {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    #contact > ul li::before {
+        font-size: 0.9rem;
+        padding: 8px;
+        border-radius: 13px;
     }
 }
