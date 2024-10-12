@@ -14,7 +14,7 @@
 }
 body {
     background-color: rgb(250, 250, 250);
-    height: 100vh;
+    height: 100dvh;
     width: 90%;
     margin: auto;
 
@@ -552,6 +552,19 @@ span.clr-cgw .clr-cgw-blue {
     #wrapper {
         overflow-x: hidden;
     }
+    #logo img {
+        height: 55px;
+    }
+    span.clr-cgw .clr-cgw-black {
+        font-size: 1.3rem;
+    }
+    span.clr-cgw .clr-cgw-green {
+        font-size: 1.3rem;
+    }
+    span.clr-cgw .clr-cgw-blue {
+        font-size: 1.5rem;
+        line-height: 1.4rem;
+    }
     #nav > ul {
         display: none;
     }
@@ -568,10 +581,20 @@ span.clr-cgw .clr-cgw-blue {
         align-items: center;
     }
     #hdr > #hdr-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #hdr > #hdr-content p {
-        font-size: 1.15rem;
+        font-size: 1rem;
+    }
+    #hdr > #hdr-content::before {
+        padding: 30px 0;
+        border-radius: 0;
+    }
+    #hdr p {
+        color: var(--clr-white);
+        max-width: 800px;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
     }
     .underline::before {
         width: 80dvw;
