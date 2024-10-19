@@ -625,10 +625,11 @@ span.clr-cgw .clr-cgw-blue {
         margin-bottom: 50px;
     }
     #about > p {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         gap: 5px;
         font-size: 1.1rem;
+        display: none;
     }
 
     .point-wrapper {
