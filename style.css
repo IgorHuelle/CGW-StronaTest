@@ -242,6 +242,9 @@ span.clr-cgw .clr-cgw-blue {
     font-size: 2.4rem;
     margin-bottom: 5px;
 }
+#about h2.underline::before {
+    height: 0;
+}
 #about > p {
     font-size: 1.2rem;
     margin-bottom: 80px;
@@ -601,6 +604,9 @@ span.clr-cgw .clr-cgw-blue {
     }
     #about > .about-content {
         margin-inline: 0;
+    }
+    #about h2.underline::before {
+        height: 4px;
     }
     #about > .about-content > div {
         background-color: rgb(255, 255, 255);
