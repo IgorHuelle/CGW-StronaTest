@@ -639,6 +639,8 @@ span.clr-cgw .clr-cgw-blue {
     #about > .about-content > div {
         background-color: rgb(255, 255, 255);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        width: auto;
+        padding: 40px 0;
     }
     #about > .about-content img {
         display: none;
@@ -657,6 +659,7 @@ span.clr-cgw .clr-cgw-blue {
         flex-direction: column;
         font-size: 1.5rem;
         margin-bottom: 50px;
+        margin-inline: 0px;
     }
     #about > p {
         /* display: flex;
@@ -664,6 +667,7 @@ span.clr-cgw .clr-cgw-blue {
         gap: 5px;
         font-size: 1.1rem;
         display: none;
+        margin-inline: 0px;
     }
 
     .point-wrapper {
@@ -710,6 +714,7 @@ span.clr-cgw .clr-cgw-blue {
     }
     #oferts > .oferts-content > div {
         width: 90dvw;
+        padding: 0;
     }
     #oferts .oferts-list {
         font-size: 1rem;
