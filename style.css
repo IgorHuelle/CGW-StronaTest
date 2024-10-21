@@ -242,6 +242,12 @@ span.clr-cgw .clr-cgw-blue {
     font-size: 2.4rem;
     margin-bottom: 5px;
 }
+#about > h2 {
+    margin-inline: 40px;
+}
+#about > p {
+    margin-inline: 40px;
+}
 #about h2.underline::before {
     height: 0;
 }
@@ -265,19 +271,28 @@ span.clr-cgw .clr-cgw-blue {
     }
 }
 #about > .about-content {
-    margin-inline: 80px;
-    border-radius: 20px;
     margin-bottom: 150px;
     
     display: flex;
+    justify-content: right;
+    background-image: url(img/test1.webp);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
     gap: 40px;
 }
 #about > .about-content > div {
+    width: 550px;
+    padding: 80px 40px;
+    background-color: var(--clr-white);
+    box-shadow: 10px 0 10px 20px var(--clr-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 #about > .about-content > img {
     width: 50%;
@@ -364,6 +379,9 @@ span.clr-cgw .clr-cgw-blue {
     text-align: right;
 }
 
+#oferts {
+    margin-inline: 30px;
+}
 #oferts > h2,
 #contact > h2 {
     position: relative;
@@ -421,9 +439,16 @@ span.clr-cgw .clr-cgw-blue {
     transform: rotateX(-180deg);
 }
 #oferts > .oferts-content {
-    margin-inline: 80px;
+    /* margin-inline: 80px; */
     
     display: flex;
+    background-image: url(img/Cropped-view-of-professional-cleaners-deep-cleaning-a-home-Depositphotos-355770670-XL.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
     gap: 40px;
 }
 #oferts > .oferts-content > img {
@@ -431,7 +456,10 @@ span.clr-cgw .clr-cgw-blue {
     border-radius: 20px;
 }
 #oferts > .oferts-content > div {
-    width: 50%;
+    width: 550px;
+    padding: 40px;
+    background-color: var(--clr-white);
+    box-shadow: 10px 0 10px 20px var(--clr-white);
     display: flex;
     flex-direction: column;
     align-items: center;
