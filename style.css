@@ -636,6 +636,9 @@ span.clr-cgw .clr-cgw-blue {
     #about h2.underline::before {
         height: 4px;
     }
+    #about > .about-content {
+        overflow: visible;
+    }
     #about > .about-content > div {
         background-color: rgb(255, 255, 255);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -708,6 +711,7 @@ span.clr-cgw .clr-cgw-blue {
     }
     #oferts .oferts-content {
         margin: 0;
+        overflow: visible;
     }
     #oferts .oferts-content img {
         display: none;
